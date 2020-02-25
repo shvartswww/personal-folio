@@ -374,18 +374,10 @@ p {
   .header-brand {
     margin-bottom: 1rem;
   }
-
-
-
 }
 
 @media (max-height: px) {
   .my-photo {
     display: none;
   }
-
-/* @media (max-height: 715px) {
-  .my-photo {
-    display: none;
-  }
-} */
+}
