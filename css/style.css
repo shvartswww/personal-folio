@@ -1,0 +1,391 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  /* Свойства отвечающие за размеры, отступы, display */
+  margin: 0;
+
+  /* Свойства отвечающие за шрифты, color */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+
+  /* Стилизация (внешнее оформление), background, тени, border-radius, */
+
+
+  /* Свойства отвечающие за позиционирование */
+
+}
+
+/* Сброс стандартных стилей
+============================*/
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 10px;
+}
+
+/* Сетка */
+
+.container {
+  width: 100%;
+  max-width: 1030px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+
+/* Page
+===========*/
+
+.page {
+  width: 100%;
+  height: 100vh;
+  min-height: 715px;
+
+  background: black url("../img/bg.jpg") center no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+/* Header
+============*/
+.header {
+  padding: 0.9rem 0;
+  background: #2B7DED;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* выравнять флекс-элементы по вертикали */
+}
+
+.header-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.header-brand a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-logo img {
+  display: block; /* Чтобы выровнять картинку по центу шапки нужно делать ее блоком */
+}
+
+.header-nav {
+  display: flex;
+}
+
+.header-nav-link {
+  margin-right: 1.4rem;
+
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.header-nav-link:hover {
+  color: rgb(92, 148, 226);
+  transition: color 0.2s linear;
+}
+
+.header-nav-link.active {
+  position: relative;
+}
+
+.header-nav-link.active:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.header-nav-link:last-child {
+  margin-right: 0;
+}
+
+/* Content
+============*/
+
+.content {
+
+  max-width: 565px;
+  width: 100%;
+  margin-top: 108px;
+}
+
+.content-header {
+  margin-bottom: 35px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.title {
+  margin-bottom: 10px;
+
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.title span {
+  color: #2B7DED;
+}
+
+.text {
+  margin-bottom: 50px;
+
+  font-size: 1rem;
+  color: white;
+}
+
+.text p {
+  margin-bottom: 20px;
+}
+
+/* form
+============*/
+
+.form {
+  max-width: 280px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.input,
+.textarea {
+  display: block;
+  padding: 11px 0 11px 18px;
+  width: 100%;
+
+  font-family: inherit;
+  font-size: 1rem;
+  color: white;
+  font-weight: medium;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0;
+  border-radius: 5px;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: white;
+  font-weight: medium;
+}
+
+/* btn
+============*/
+
+.btn {
+  display: inline-block;
+  padding: 11px 35px;
+
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+
+  cursor: pointer;
+  border: 0;
+  background-color: #2B7DED;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #1e539e;
+  transition: background-color 0.2s linear;
+}
+
+.btn:active {
+  background-color: #13396e;
+}
+
+.my-photo {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+
+.form-btn {
+  padding: 11px 84px;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+/* Footer
+============*/
+.footer {
+  width: 100%;
+
+  position: absolute;
+  bottom: 45px;
+  left: 0px;
+
+
+}
+
+/* Contacts
+============*/
+.contacts {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+
+  color: white;
+  text-decoration: none;
+  font-weight: medium;
+
+  position: relative;
+}
+
+.contacts-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-icon {
+  margin-right: 5px;
+}
+
+.contacts-link:last-child:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 2px;
+  background-color: white;
+  pointer-events: none;
+
+  position: absolute;
+  left: 125%;
+  top: 10px;
+}
+
+/* Media
+============*/
+
+@media (max-width: 1000px) {
+  .my-photo {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .page {
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-brand {
+    font-size: 1.2rem;
+  }
+
+  .content {
+    text-align: center;
+    max-width: none;
+    margin-bottom: 50px;
+    margin-top: 2rem;
+  }
+
+  .form {
+    margin: 0 auto;
+  }
+
+  .footer {
+    position: static;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts-link {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .contacts-link:last-child {
+    margin-bottom: 0;
+  }
+
+  .contacts-link:last-child:after {
+    display: none;
+  }
+
+}
+
+@media (max-width: 565px) {
+
+  .content {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+
+
+  .header-inner {
+    flex-direction: column;
+  }
+
+  .header-brand {
+    margin-bottom: 1rem;
+  }
+
+
+
+}
+
+@media (max-height: px) {
+  .my-photo {
+    display: none;
+  }
+
+/* @media (max-height: 715px) {
+  .my-photo {
+    display: none;
+  }
+} */
